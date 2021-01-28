@@ -1,0 +1,178 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  .content {
+    display: flex;
+    /* height: 100%; */
+  }
+  
+  /* Section de gauche : Nicole  */
+  
+  .news-title {
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding: 1.5rem 1.5rem;
+    background-color: #f9f9f9;
+  }
+  
+  .content__left {
+    width: 50%;
+    height: 100vh;
+    background-image: url('../images/nicole.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 1rem 1rem;
+  }
+  
+  .title {
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    width: 250px;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .title__text {
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+  }
+  
+  .title__img {
+    width: 50px;
+    margin-right: 1rem;
+  }
+  
+  .intro {
+    /* rgba : le a = l'alpha = la transparence. entre 0 et 1 */
+    background-color: rgba(170, 170, 170, 0.5);
+    color: white;
+    padding: 1.5rem 1rem 1.5rem 5rem;
+    text-align: right;
+  }
+  
+  .intro__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .intro__subtitle {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: normal;
+  }
+  
+  .intro__desc {
+    line-height: 1.2rem;
+  }
+  
+  .bottom-links {
+    color: white;
+    text-align: right;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+  
+  }
+  
+  
+  /* Fin section de gauche : nicole  */
+  
+  /* Section de droite : articles  */
+  
+  .content__right {
+    width: 50%;
+    height: 100vh;
+    /* overflow scroll : le contenu qui dépasse de la taille
+    (ici 100vh)
+    sera affiché avec une scrollbar */
+    overflow-y: scroll;
+  }
+  
+  .articles {
+    display: flex;
+    /* autorise le retour a la ligne des éléments qui dépassent */
+    flex-wrap: wrap;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .article {
+    background-color: white;
+    border: 1px solid #eaeaea;
+    border-left: none;
+    border-bottom: none;
+    /* nos items prennent 50% de la largeur du parent. */
+    width: 50%;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .article__category {
+    text-transform: uppercase;
+    color: white;
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* modifier BEM : une classe qui se met par dessus une autre */
+  .article__category--news {
+    background-color: #98DC62;
+  }
+  
+  .article__category--team {
+    background-color: #DC5E53;
+  }
+  
+  .article__category--work {
+    background-color: #0766F0;
+  }
+  
+  .article__title {
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
+  
+  .article__info {
+    margin: 1rem 0;
+  }
+  
+  .article__info__picture {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+  }
+  
+  .article__info__author {
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+  }
+  
+  .article__info__date {
+    color: lightgrey;
+    font-size: 0.8rem;
+  }
+  
+  .article__content {
+    line-height: 1.5em;
+  }
+  
+  .article__read {
+    font-weight: bold;
+    color: #007BFF;
+    text-decoration: underline;
+  }
+  
+  /* Fin section de droite : articles  */
