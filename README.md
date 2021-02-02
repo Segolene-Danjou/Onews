@@ -1,2 +1,2 @@
-# Onews
-News from O'Clock !
+# News
+News from students!
